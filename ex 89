@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(){
+    int a[15], b[15], contador = 0;
+    
+    for (int i=0; i<15; i++){
+        printf ("digite um valor para vetor A:\n");
+        scanf ("%d", a[i]);
+    }
+    
+    for (int j =0; j<15; j++){
+        printf ("digite um valor para vetor B:\n");
+        scanf ("%d", b[j]);
+    }
+    
+    for (int i =0; i<15; i++){
+        if (a[i] == b[j] && i == j){
+            contador ++;
+        }
+    }
+    
+    printf ("\nos valores são iguais %d vezes.", contador);
+}
