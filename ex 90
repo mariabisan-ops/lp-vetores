@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(){
+    int v[30], n, cont=0;
+    
+    for (int i=0; i<30; i++){
+        printf ("digite um valor:");
+        scanf ("%d", &v[i]);
+    }
+    
+    printf ("\ndigite o valor buscado:");
+    scanf ("%d", &n);
+        
+    for (int i=0; i<30; i++){
+        if (v[i]==n){
+            cont ++;
+        }
+    }
+    
+    printf ("\no número buscado aparece %d vezes", cont);
+    
+    
+    
+}
