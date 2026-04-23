@@ -1,8 +1,10 @@
 #include <stdio.h>
 
+#define M 100
+
 int main(){
-    int n, A[n], B[n], soma [n];
-    printf ("digite o tamanho dos vetores:");
+    int n, A[M], B[M], soma [M];
+    printf ("digite o tamanho dos vetores: (entre 1 e 100)");
     scanf ("%d", &n);
     
     for (int i = 0; i<n; i++){
