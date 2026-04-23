@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    int vet [50], cont = 0;
+    int vet [50];
     
     for (int i = 0; i<50; i++){
         printf ("digite um número:");
@@ -11,8 +11,10 @@ int main(){
     for (int i = 0; i<50; i++){
         for (int j = 0; j<50; j++){
             if (vet[i]==vet[j]){
-                cont ++;
-                printf ("existem %d numeros repetidos nas posições %d e %d\n", cont, i, j)
+                if (i>j){
+                    break;
+                }
+                printf ("%d repete na posição %d\n",vet[i], j)
             }
         }
     }
