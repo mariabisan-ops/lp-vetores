@@ -1,26 +1,29 @@
 #include <stdio.h>
 
-int main(){
-    int v[20], n, cont=0, n [20];
-    for (int i = 0; i<20; i++){
-        printf ("digite um valor para preencher v[%f]:\n", i);
-        scanf ("%f", &v[i]);
+int main (){
+    int v[20], n, cont=0, novo[20];
+    for (int i =0; i<20; i++){
+        printf ("\npreencha V[%d]", i);
+        scanf ("%d", &v[i]);
     }
-    
-    for (int i = 0; i<20, i++){
-        printf ("digite o valor a ser buscado:\n");
-        scanf ("%f", &n);
-        if (v[i]==n){
-            printf (valor encontrado);
-            cont ++;
+
+    printf ("\ndigite o numero a ser buscado:");
+    scanf ("%d", &n);
+    for (int i =0; i<20; i++){
+        if (v[i] == n){
+           printf ("\nvalor encontrado");
+           cont ++;
         }
     }
-    
-    if (cont >0){
-        for (int i = 0; i<20; i++){
-        printf ("digite um valor para preencher n[%f]:\n", i);
-        scanf ("%f", &n[i]);
+    if (cont ==0){
+       printf ("valor nao encontrado");
     }
+    else {
+        for (int i=20; i<19; i++){
+            if (v[i] != n){
+               novo [i] = v[i];
+            }
+            printf ("\nnovo vetor : %d", novo[i];
+        }
     }
-    
 }
