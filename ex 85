@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    float T[365], n1, n2, media, n3, soma=0, contador = 0, media;
+    float T[365], n1, n2, media, n3, soma=0, contador = 0;
     for (int i = 0; i<365; i++){
         printf ("digite a temperatura média do dia:\n");
         scanf ("%f", &T[i]);
